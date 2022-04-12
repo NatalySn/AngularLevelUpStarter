@@ -1,0 +1,17 @@
+
+<div class='card'>
+    <div class='left'>
+         <p class='cardName'>{{ name}}</p>
+                 <p class='cardNum'>{{number}}</p>
+                <h3 class='amount'>{{amount}}</h3>
+    </div>
+    <div class='right'>
+              <img *ngIf="paymentSystem ==='visa'" src="/assets/Vector.png" alt="" srcset="">
+        <p *ngIf="paymentSystem ==='mastercard'"   class='paymentSystem'>mastercard</p>
+        <p *ngIf="paymentSystem ==='mir'"   class='paymentSystem'>mastercard</p>
+             <p class='expirationDate'>{{expirationDate}}</p>
+    </div>
+    
+</div>
+
+
